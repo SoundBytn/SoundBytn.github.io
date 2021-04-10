@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundbytn - Brahman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Styles\brahstyle.css">
+    <style>
+       body{
+          margin-bottom: 500px;
+          background-image:url("soundbytn_logo.png");
+          background-repeat: repeat;
+          background-size: 25%;
+          
+       }
+    </style>
+    
+</head>
+  
+<body bgcolor="#d6292a">
+  
+   </div>
+
+   <h2>THIS DOES NOT EXIST ALBUM</h2>
+<ul>
+   <li>Rap Music</li>
+   <li>GOOD MOURNING!</li>
+   <li>COMPOSITION III</li>
+   <li>MBYC</li>
+   <li>THE PAINT WALKING</li>
+   <li>IMATDAIMSOI</li>
+   <li>Where is Brahman?</li>
+   <li>BLOOD MONEY</li>
+   <li>THE SANDS OF TIME</li>
+   <li>EGO DEATH</li>
+   <li>COMPOSITION XI</li>
+   <li>IMGSDD</li>
+   <li>Wrap Music</li>
+</ul>
+<!---- Webpage Links --->
+<div class="pagelinks"> 
+   <a href="Index.html"> Soundbytn </a>
+      </div>
+
+  <div class="main">
+  	<p id="logo"><i class="fa fa-music"></i>Brahman</p>
+    
+    <!--- left part --->
+     <div class="left">
+
+      <!--- song img --->
+      <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">90</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+         </div>
+
+     </div>
+ 
+
+     <!--- right part --->
+  	 <div class="right">
+
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+       <!--- song title & artist name --->
+      <p id="title">title.mp3</p>
+      <p id="artist">Artist</p>
+
+      <!--- middle part --->
+  	 	<div class="middle">
+  	       <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+      	   <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+  	       <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+  	   </div>
+
+       <!--- song duration part --->
+        <div class="duration">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+           <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+  	</div>
+     
+       </div>  
+  </div>
+   <div class="mvtitle">
+     <img src=Brahman_Covers_Pics\kalima_title.JPG></img>
+     </div>
+    
+ <video id="brah" width="720" height="480" controls> <source src="Brahman_MV\Braman_KaliMa.mp4" type="video/mp4"> </video>
+ <script>
+   var video = document.getElementById('brah');
+  video.volume = 0.2;
+  </script>
+   <!---PROFILEPIC--->
+ <div class="profileshadow">
+
+   <div class="profilepic"> 
+       
+      <img src="Brahman_Covers_Pics\brahman_profile.jpg" width= 200px height= 200px></img>
+   </div>
+</div>
+<!--Copyright-->
+      <div class="musiccopy">
+      <p>℗ 2020 Brahman</p>
+      </div>
+  <!--- Add javascript file --->
+  <script src="Scripts\brahman_script.js"></script>
+
+</body>
+</html>

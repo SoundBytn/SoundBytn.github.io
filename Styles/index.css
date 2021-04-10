@@ -1,0 +1,46 @@
+*
+img{
+clip-path: circle();
+margin-left: 320px;
+}
+.pagetitle{
+    color: white;
+    text-align: center;
+    font-family: Arial, "Times New Roman";
+}
+.topartists{
+    text-align: center;
+    color: white;
+    font-family: Arial, "Times New Roman";
+}
+.topmvtitle{
+    text-align: center;
+    color: white;
+    font-family: Arial, "Times New Roman";
+}
+video{
+    margin-left: 110px;
+}
+h1{
+    font-size: 60px;
+}
+.brahname{
+    color: #d6292a;
+    font-size: 30px;
+    margin-right: 9%;
+    margin-left:18.5%;
+    font-family: Arial, "Times New Roman";
+}
+.skiname{
+    font-size:30px;
+    color:#4fb14e;
+    margin-left: 5%;
+    font-family: Arial, "Times New Roman";
+}
+.xname{
+    color: #2f5ed0;
+    font-size: 30px;
+    margin-left:10.5%;
+    font-family: Arial, "Times New Roman";
+    font-style: bold;
+}

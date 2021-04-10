@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundbytn - Ski Mask</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Styles/ski_style.css">
+    <style>
+      body{
+         margin-bottom: 500px;
+         background-image:url("soundbytn_logo.png");
+         background-repeat: repeat;
+         background-size: 25%;
+         
+      }
+   </style>
+   </head>
+   <!---- Webpage Links --->
+   <div class="pagelinks"> 
+   <a href="Index.html"> Soundbytn </a>
+      </div>
+
+<body bgcolor="#4fb14e">
+   
+   <h2>TRACKLIST</h2>
+<ul>
+   <li>Carbonated Water</li>
+   <li>Baby Wipe</li>
+   <li>Off The Wall</li>
+   <li>Faucet Failure</li>
+   <li>How You Feel?</li>
+   <li>La La</li>
+   <li>Nuketown</li>
+</ul>
+
+
+   <div class="main">
+  	<p id="logo"><i class="fa fa-music"></i>SkiMaskTheSlumpGod</p>
+    
+    <!--- left part --->
+     <div class="left">
+
+      <!--- song img --->
+      <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">90</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+         </div>
+
+     </div>
+ 
+
+     <!--- right part --->
+  	 <div class="right">
+
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+       <!--- song title & artist name --->
+      <p id="title">title.mp3</p>
+      <p id="artist">Artist</p>
+
+      <!--- middle part --->
+  	 	<div class="middle">
+  	       <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+      	   <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+  	       <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+  	   </div>
+
+       <!--- song duration part --->
+        <div class="duration">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+           <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+  	</div>
+
+
+  </div>
+  <div class="mvtitle">
+   <h3>Nuketown (Music Video)</h3>
+     </div>
+<video id="ski" preload="auto" width="720" height="480" center="left" controls><source src="Ski_Music_Video\Ski_nuketown_MV.mp4" > </video>
+<script>
+   var video = document.getElementById('ski');
+  video.volume = 0.5;
+  </script>
+
+<div class="profilepic"> 
+<img src="Ski_Covers_Pics\skimask_profile.JPG" width="200px" height="200px"></img>
+ </div>   
+ <div class="musiccopy">
+ <p>© 2020 Republic Records, a division of UMG Recordings, Inc. (Victor Victor) Explicit</p>
+ </div>
+ 
+   
+  <!--- Add javascript file --->
+  <script src="Scripts\ski_script.js"></script>
+
+</body>
+</html>
