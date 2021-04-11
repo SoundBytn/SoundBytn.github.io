@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundbytn - SECRET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Styles\SWAMPstyle.css">
+    <style>
+       body{
+          margin-bottom: 500px;
+          background-image:url("soundbytn_logo.png");
+          background-repeat: repeat;
+          background-size: 25%;
+          
+       }
+    </style>
+    
+</head>
+  
+<body bgcolor="#d6292a">
+  
+   </div>
+
+   <h2>SWAMP ALBUM</h2>
+<ul>
+   <li>SWAMP</li>
+   <li>HMWMPC</li>
+   <li>TKAAR</li>
+   <li>I can see clearly now</li>
+   <li>tale of yehoshua</li>
+   <li>ROBOT</li>
+   <li>BACK IN LONG BEACH</li>
+   <li>HOW TO ROB A BANK</li>
+   <li>COMFORT IN DISCOMFORT</li>
+   <li>INCREDIBLE INSURRECTION</li>
+   <li>SOGAPSIAFP</li>
+   <li>BAR FIGHT MUSIC</li>
+   <li>DISENTIGRATE</li>
+   <li>LA LA UNDERBELLY</li>
+   <li>FRIED EGG</li>
+   <li>P.I.G.G.Y</li>
+   <li>NOISEINSIDEMYHEAD</li>
+   <li>ballad of ganesha</li>
+   <li>i don't know</li>
+   <li>baby me</li>
+   <li>DARKIE CAN RAP</li>
+   <li>the credits</li>
+</ul>
+<!---- Webpage Links --->
+<div class="pagelinks"> 
+   <a href="https://soundbytn.github.io"> Soundbytn </a>
+      </div>
+
+  <div class="main">
+  	<p id="logo"><i class="fa fa-music"></i>Lil Darkie</p>
+    
+    <!--- left part --->
+     <div class="left">
+
+      <!--- song img --->
+      <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">90</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+         </div>
+
+     </div>
+ 
+
+     <!--- right part --->
+  	 <div class="right">
+
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+       <!--- song title & artist name --->
+      <p id="title">title.mp3</p>
+      <p id="artist">Artist</p>
+
+      <!--- middle part --->
+  	 	<div class="middle">
+  	       <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+      	   <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+  	       <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+  	   </div>
+
+       <!--- song duration part --->
+        <div class="duration">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+           <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+  	</div>
+     
+       </div>  
+  </div>
+   <div class="mvtitle">
+     <img src=Brahman_Covers_Pics\kalima_title.JPG></img>
+     </div>
+    
+ <video id="brah" width="720" height="480" controls> <source src="SWAMPMV\ClearlyMV.mp4" type="video/mp4"> </video>
+ <script>
+   var video = document.getElementById('brah');
+  video.volume = 0.2;
+  </script>
+   <!---PROFILEPIC--->
+ <div class="profileshadow">
+
+   <div class="profilepic"> 
+       
+      <img src="SWAMPCOVER\SWAMP_Cover.JPG" width= 200px height= 200px></img>
+   </div>
+</div>
+<!--Copyright-->
+      <div class="musiccopy">
+      <p>℗ 2020 Lil Darkie</p>
+      </div>
+  <!--- Add javascript file --->
+  <script src="Scripts\lildarkie_script.js"></script>
+
+</body>
+</html>
