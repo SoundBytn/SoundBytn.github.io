@@ -40,31 +40,31 @@ let All_song = [
    {
      name: "Off The Wall",
      path: "Ski_Music_1/Ski_OffTheWall.mp3",
-     img: "Ski_Covers_Pics/MOV3.JPG",
+     img: "Ski_Covers_Pics/ski_carbonatedwater.jpg",
      singer: ""
    },
    {
      name: "Faucet Failure",
      path: "Ski_Music_1/Ski_FaucetFailure.mp3",
-     img: "Ski_Covers_Pics/ski_stokeley.JPG",
+     img: "Ski_Covers_Pics/ski_babywipe.jpg",
      singer: ""
    },
    {
      name: "How You Feel?",
      path: "Ski_Music_1/Ski_HYF.mp3",
-     img: "Ski_Covers_Pics/ski_stokeley.JPG",
+     img: "Ski_Covers_Pics/ski_carbonatedwater.jpg",
      singer: ""
    },
    {
 	name: "La La",
 	path:"Ski_Music_1/Ski_LaLa.mp3",
-	img:"Ski_Covers_Pics/ski_stokeley.JPG",
+	img:"Ski_Covers_Pics/ski_babywipe.jpg",
 	singer: ""
 	},
 	{
 	name: "Nuketown",
 	path:"Ski_Music_2/Ski_Nuketown.mp3",
-	img:"Ski_Covers_Pics/ski_stokeley.JPG",
+	img:"Ski_Covers_Pics/ski_carbonatedwater.jpg",
 	singer: ""
 	},
 ];
